@@ -7,7 +7,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   <<-SQL 
-    SELECT name, moto FROM characters 
+    SELECT name, moto FROM characters ORDER BY length 
 end
 
 
